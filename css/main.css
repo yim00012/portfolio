@@ -1,0 +1,347 @@
+/* Root variables and customizations */
+:root {
+    --bs-primary: #B0FF92;
+    --bs-secondary: #A09BE7;
+    --bs-dark: #191716;
+    --bs-purple: #5F00BA;
+    --bs-body-color: var(--bs-secondary);
+    --bs-border-width: 1px;
+    --bs-border-style: solid;
+    --bs-border-radius: 0;
+    --bs-link-color: var(--bs-secondary);
+    --bs-link-hover-color: var(--bs-primary);
+}
+
+.bg-dark {
+    background-color: var(--bs-dark) !important;
+}
+
+.text-primary {
+    color: var(--bs-primary) !important;
+}
+
+.text-secondary {
+    color: var(--bs-secondary);
+}
+
+.btn-primary {
+    background-color: var(--bs-primary);
+    color: var(--bs-dark);
+    border: 1px solid var(--bs-primary);
+    border-radius: 0;
+    padding: 10px 20px;
+    margin: 20px auto;
+}
+
+.btn-primary:hover {
+    background-color: var(--bs-dark);
+    color: var(--bs-primary);
+}
+
+.btn-secondary:hover {
+    background-color: var(--bs-secondary);
+    color: var(--bs-dark);
+}
+
+.btn-secondary {
+    background-color: var(--bs-dark);
+    color: var(--bs-primary);
+    border: 1px solid var(--bs-secondary);
+    border-radius: 0;
+    padding: 20px 40px;
+    margin: 20px auto;
+}
+
+/* Overall preset */
+html {
+    box-sizing: border-box;
+}
+
+ *,
+ *:before,
+ *:after {
+    box-sizing: inherit;
+ }
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: var(--bs-dark);
+}
+
+h1 {
+    font-family: 'Courgette', cursive;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--bs-dark);
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: .5em;
+    text-align: center;
+    color: var(--bs-primary);
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: .5rem;
+    text-align: left;
+    color: var(--bs-primary);
+}
+
+h5 {
+    margin-bottom: 20px;
+    color: var(--bs-primary);
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+}
+
+i {
+    color: black;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+}
+
+/* 
+font-family: 'Courgette', cursive;
+font-family: 'Ubuntu', sans-serif;
+
+Eerie Black #191716
+Light Green #B0FF92
+Tropical Indigo #A09BE7
+Chryster Blue #5F00BA
+*/
+
+/* Skip links properties */
+.skip-links{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.skip-links a{
+    position: absolute;
+    top: -3em;
+    background-color: whitesmoke;
+    color: var(--bs-purple);
+    padding: .5em 1em;
+    font-weight: bold;
+    text-decoration: none;
+    z-index: 1;
+}
+  
+.skip-links a:focus{
+    top: 0;
+}
+
+
+/********** Header **********/
+
+.navbar-brand img {
+    width: 76px;
+}
+
+.navbar a {
+    font-size: 24px;
+}
+
+.active {
+    text-decoration: underline;
+}
+
+.banner {
+    position: relative;
+    /* height: 1080px; */
+}
+
+.banner img {
+    height: 900px;
+    object-fit: cover;
+    object-position: 50% 25%;
+}
+
+.banner h1 {
+    position: absolute;
+    top: 65%;
+    left: 10%;
+}
+
+/********** Main **********/
+
+
+/********** Footer **********/
+
+/* Footer properties */
+
+footer {
+    align-items: center;
+}
+
+footer img {
+    width: 40px;
+    margin: 0 20px 0 10px;
+    border: 1px solid var(--bs-primary);
+    border-radius: 20px;
+}
+
+
+/***** Set for the About page *****/
+
+.card {
+    border: none;
+    background-color: var(--bs-dark);
+}
+
+.card-img-top {
+    border: 1px solid var(--bs-purple);
+    border-radius: 0;
+    width: 90%;
+    height: 50%;
+    align-self: center;
+}
+
+.card img {
+    object-fit: cover;
+    object-position: 50% 30%;
+}
+
+.card-text {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.span1 {
+    position: absolute;
+    background-color: var(--bs-primary);
+    display: inline-block;
+    width: 200px;
+    height: 3px;
+    top: 45%;
+    left: 57%;
+    transform: rotate(-45deg);
+}
+
+
+/***** Set for the Contact page *****/
+
+.row {
+    /* border: 1px solid #B0FF92; */
+    padding: 5%;
+}
+
+.span2 {
+    background-color: var(--bs-secondary);
+    display: inline-block;
+    width: 150px;
+    height: 3px;
+    margin: 30px auto;
+}
+
+.btn {
+    display: block;
+}
+
+.col-1 {
+    display: flex;
+    justify-items: center;
+}
+
+.span3 {
+    background-color: var(--bs-purple);
+    display: inline-block;
+    width: 3px;
+    height: 80%;
+    margin: auto;
+}
+
+form {
+    border: 1px solid var(--bs-primary);
+    padding: 10px 30px;
+}
+
+label {
+    text-align: left;
+    margin-top: 10px;
+}
+
+.form-control {
+    width: 100%;
+    height: 2rem;
+    margin-bottom: 10px;
+    border-radius: 0;
+}
+
+textarea {
+    height: 10rem !important;
+    resize: none;
+    overflow: auto;
+}
+
+
+/*******************************************************
+ Adds media query for the screen size of 720px and below
+ *******************************************************/
+
+ @media screen and (max-width: 960px) {
+    body {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    .banner img {
+        height: 500px;
+        object-position: 50% 10%;
+    }
+
+    .banner h1 {
+        top: 60%;
+        left: 5%;
+    }
+
+    .navbar a {
+        font-size: 21px;
+    }
+
+    /* About page */
+    .row-about {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .row-about .col-4, .row-about .col-8 {
+        width: 100%;
+    }
+
+    .span1 {
+        display: none;
+    }
+
+    .card-img-top {
+        width: 60%;
+    }
+
+    /* Contact page */
+    .row-contact {
+        display: inline-block;
+    }
+ }
