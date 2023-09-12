@@ -2,6 +2,7 @@
 :root {
     --bs-primary: #B0FF92;
     --bs-secondary: #A09BE7;
+    --bs-text:#FFF2F1;
     --bs-dark: #191716;
     --bs-purple: #5F00BA;
     --bs-body-color: var(--bs-secondary);
@@ -64,23 +65,23 @@ html {
  }
 
 body {
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
     line-height: 1.5;
     background-color: var(--bs-dark);
 }
 
 h1 {
-    font-family: 'Courgette', cursive;
-    font-size: 2.5rem;
+    font-family: 'Sacramento', cursive;
+    font-size: 3rem;
     font-weight: bold;
-    color: var(--bs-dark);
+    color: var(--bs-text);
 }
 
 h2 {
     font-size: 2rem;
     font-weight: bold;
-    margin: .5em;
+    margin: .5em auto;
     text-align: center;
     color: var(--bs-primary);
 }
@@ -93,9 +94,16 @@ h3 {
     color: var(--bs-primary);
 }
 
+h4 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--bs-text);
+}
+
 h5 {
     margin-bottom: 20px;
     color: var(--bs-primary);
+    font-weight: bold;
 }
 
 a {
@@ -107,7 +115,7 @@ img {
 }
 
 i {
-    color: black;
+    color: #B0FF92;
 }
 
 .container {
@@ -116,13 +124,11 @@ i {
 }
 
 /* 
-font-family: 'Courgette', cursive;
-font-family: 'Ubuntu', sans-serif;
-
 Eerie Black #191716
 Light Green #B0FF92
 Tropical Indigo #A09BE7
 Chryster Blue #5F00BA
+Lavender Blush #FFF2F1
 */
 
 /* Skip links properties */
@@ -135,7 +141,7 @@ Chryster Blue #5F00BA
 .skip-links a{
     position: absolute;
     top: -3em;
-    background-color: whitesmoke;
+    background-color: #FFF2F1;
     color: var(--bs-purple);
     padding: .5em 1em;
     font-weight: bold;
@@ -156,31 +162,49 @@ Chryster Blue #5F00BA
 
 .navbar a {
     font-size: 24px;
+    font-weight: bold;
 }
 
 .active {
     text-decoration: underline;
+    color: var(--bs-primary);
 }
 
 .banner {
     position: relative;
-    /* height: 1080px; */
+    margin-top: 200px;
+    margin-bottom: 100px;
 }
 
-.banner img {
-    height: 900px;
-    object-fit: cover;
-    object-position: 50% 25%;
+/* Neon Effect */
+
+.banner .neon {
+    color: #FFF2F1;
+    font-size: 5rem;
+    text-align: center;
+    text-shadow: 
+    0 0 7px #FFF2F1,
+    0 0 10px #A09BE7,
+    0 0 42px #5F00BA,
+    0 0 62px #5F00BA,
+    0 0 82px #5F00BA;
 }
 
-.banner h1 {
-    position: absolute;
-    top: 65%;
-    left: 10%;
-}
 
 /********** Main **********/
 
+.showcase {
+    margin: 100px auto;
+}
+
+.fa-angle-double-right, .fa-long-arrow-left  {
+    margin-right: 10px;
+}
+
+
+.fa-angle-double-left, .fa-long-arrow-right {
+    margin-left: 10px;
+}
 
 /********** Footer **********/
 
@@ -198,11 +222,122 @@ footer img {
 }
 
 
+/***** Set for the Project pages *****/
+
+.sub-banner .neon {
+    color: #FFF2F1;
+    font-size: 3.5rem;
+    text-align: center;
+    text-shadow: 
+    0 0 7px #FFF2F1,
+    0 0 10px #5F00BA,
+    0 0 30px #5F00BA,
+    0 0 45px #A09BE7,
+    0 0 50px #A09BE7;
+}
+
+.sub-banner {
+    margin-top: 200px;
+    margin-bottom: 100px;
+}
+
+.project {
+    width: 80%;
+}
+.project p {
+    color: var(--bs-text);
+}
+
+.project h2 {
+    text-align: left;
+}
+
+.span3 {
+    background-color: var(--bs-primary);
+    display: inline-block;
+    width: 100px;
+    height: 3px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.work {
+    margin-bottom: 200px;
+}
+
+.po-image {
+    margin-top: 50px;
+}
+
+.ab-p a {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.ab-image {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 50px auto;
+}
+
+.ab-image-1 {
+    width: 60%;
+}
+
+.ab-image-2 {
+    width: 38%;
+    align-self: center;
+}
+
+.ab-image-2 img {
+    margin: 10px auto;
+}
+
+.logo-image {
+    display: flex;
+    align-items: center;
+}
+
+.y-logo {
+    width: 50%;
+}
+
+.icon-image {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    align-self: center;
+    margin-top: 50px;
+}
+
+.mp-image {
+    width: 50%;
+    margin-top: 50px;
+}
+
+.link-works a {
+    color: #FFF2F1;
+    font-family: 'Sacramento', cursive;
+    font-size: 2rem;
+    text-align: center;
+    text-shadow: 
+    0 0 7px #FFF2F1,
+    0 0 10px #FFF2F1,
+    0 0 30px #A09BE7,
+    0 0 45px #A09BE7;
+}
+
+.link-works {
+    margin-bottom: 50px;
+}
+
 /***** Set for the About page *****/
 
 .card {
     border: none;
     background-color: var(--bs-dark);
+    align-self: center;
 }
 
 .card-img-top {
@@ -218,9 +353,17 @@ footer img {
     object-position: 50% 30%;
 }
 
+.card-body h1 {
+    text-shadow: 
+    0 0 7px #FFF2F1,
+    0 0 10px #5F00BA,
+    0 0 20px #5F00BA,
+    0 0 30px #5F00BA;
+}
+
 .card-text {
     text-align: center;
-    margin-top: 30px;
+    margin-top: 50px;
 }
 
 .span1 {
@@ -252,6 +395,14 @@ footer img {
 
 .btn {
     display: block;
+}
+
+.btn a {
+    color: #B0FF92;
+}
+
+.btn:hover a{
+    color: #191716;
 }
 
 .col-1 {
@@ -289,7 +440,7 @@ textarea {
 
  @media screen and (max-width: 960px) {
     body {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     h1 {
@@ -312,6 +463,39 @@ textarea {
 
     .navbar a {
         font-size: 21px;
+    }
+
+    /* Works pages */
+    .ab-image {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .ab-image-1 {
+        align-self: center;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .ab-image-2 {
+        width: 80%;
+    }
+
+    .ab-p a {
+        text-align: center;
+    }
+
+    .icon-image {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .icon-m, .icon-l {
+        margin-top: 30px;
+    }
+
+    .mp-image {
+        width: 100%;
     }
 
     /* About page */
@@ -341,5 +525,14 @@ textarea {
     /* Contact page */
     .row-contact {
         display: inline-block;
+    }
+
+    .span2 {
+        margin: 20px;
+    }
+
+    .contact-form {
+        margin-top: 50px;
+        margin-bottom: 20px;
     }
  }

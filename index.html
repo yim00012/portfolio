@@ -14,33 +14,15 @@
     <!-- Google fonts links -->
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&family=Sacramento&display=swap" rel="stylesheet">
   </head>
   <body>
     <ul class="skip-links">
-        <li><a href="#main">Skip to main content</a></li>
-        <li><a href="#footer">Skip to footer</a></li>
+      <li><a href="#main">Skip to main content</a></li>
+      <li><a href="#footer">Skip to footer</a></li>
     </ul>
 
     <header>
-        <!-- Main banner and heading 1 -->
-        <div class="banner main-banner vw-100" role="banner">
-            <picture>
-                <source srcset="img/mono-960.png"
-                        media="(max-width: 960px)" />
-            
-                <source srcset="img/mono-1280.png"
-                        media="(min-width: 960px)" />
-            
-                <img class="banner-img"
-                     src="img/mono.jpg"
-                     alt="banner">
-            </picture>
-            <h1 role="heading">Hello,<br>
-                I'm UX designer and Web developer<br>
-                who loves music, art, and design.</h1>
-        </div>
-
         <!-- Nav bar attached on top when scrolling -->
         <nav class="navbar bg-dark fixed-top" role="navigation">
             <div class="container">
@@ -52,6 +34,9 @@
                     <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
+                    <a class="nav-link" href="webproj.html">Works</a>
+                    </li>
+                    <li class="nav-item">
                     <a class="nav-link" href="about.html">About</a>
                     </li>
                     <li class="nav-item">
@@ -60,12 +45,20 @@
                 </ul>
             </div>
         </nav>
+
+        <!-- Main banner with heading 1 -->
+        <div class="banner main-banner vw-100" role="banner">
+            <h1 role="heading" class="neon">Welcome to<br>
+                StudioYim</h1>
+        </div>
     </header>
     
     <main role="main">
         <div class="container align-center">
-            <div class="ux-design row justify-content-center" data-aos="fade-up">
-                <div id="carouselIndicators" class="carousel slide w-75 col-9">
+            
+            <!-- Web project Showcase -->
+            <div class="showcase ux-design row justify-content-center" data-aos="fade-up">
+                <div id="carouselIndicators" class="carousel carousel-dark slide w-75 col-9">
                     <!-- carousel indicator at the bottom -->
                     <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -74,19 +67,6 @@
                     <!-- carousel inner contents -->
                     <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <picture class="d-block w-100">
-                            <source srcset="img/screenshot-ab-960.png"
-                                    media="(max-width: 960px)" />
-                        
-                            <source srcset="img/screenshot-ab-1280.png"
-                                    media="(min-width: 960px)" />
-                        
-                            <img class="screenshot-ab"
-                                 src="img/screenshot-ab.png"
-                                 alt="Amuse Bites">
-                        </picture>
-                    </div>
-                    <div class="carousel-item">
                         <picture class="d-block w-100">
                             <source srcset="img/moodboard-960.png"
                                     media="(max-width: 960px)" />
@@ -97,6 +77,19 @@
                             <img class="moodboard"
                                  src="img/moodboard.png"
                                  alt="moodboard">
+                        </picture>
+                    </div>
+                    <div class="carousel-item">
+                        <picture class="d-block w-100">
+                            <source srcset="img/screenshot-ab-960.png"
+                                    media="(max-width: 960px)" />
+                        
+                            <source srcset="img/screenshot-ab-1280.png"
+                                    media="(min-width: 960px)" />
+                        
+                            <img class="screenshot-ab"
+                                 src="img/screenshot-ab.png"
+                                 alt="Amuse Bites">
                         </picture>
                     </div>
                     </div>
@@ -111,43 +104,50 @@
                     </button>
                 </div>
                 <div class="description col-3">
-                    <h3>UX Design</h3>
-                    <p>focus on user-centred design for a better experience with the brand</p>
-                    <a href="#" class="text-decoration-underline">Amuse Bites</a>
+                    <h3>Web Project</h3>
+                    <p>UX Design & <br> Web Development</p>
+                    <!-- <p>focus on user-centred design for a better experience with the brand</p> -->
+                    <a href="webproj.html" class="text-decoration-underline" style="font-size:1.3rem;"><i class="fa fa-angle-double-right"></i>More</a>
                 </div>
             </div>
 
-            <div class="web-dev row justify-content-center" data-aos="fade-up">
+            <!-- Graphic Design Showcase -->
+            <div class="showcase web-dev row justify-content-center" data-aos="fade-up">
                 <div class="description col-3 text-end">
-                    <h3 class="text-end">Web<br>development</h3>
-                    <p>to build a website using HTML & CSS</p>
-                    <a href="#" class="text-decoration-underline">Three Star Media</a>
+                    <h3 class="text-end">Graphic Design</h3>
+                    <p>Logo, Icon, and Poster</p>
+                    <!-- <p>to build a website using HTML & CSS</p> -->
+                    <a href="graphics.html" class="text-decoration-underline" style="font-size:1.3rem;">More<i class="fa fa-angle-double-left"></i></a>
                 </div>
                 <div id="carouselIndicators2" class="carousel slide w-75 col-9">
                     <!-- carousel indicator at the bottom -->
                     <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselIndicators3" data-bs-slide-to="1" aria-label="Slide 2"></button>
                     </div>
                     <!-- carousel inner contents -->
                     <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <picture class="d-block w-100">
-                            <source srcset="img/screenshot-tsm-960.png"
-                                    media="(max-width: 960px)" />
-                        
-                            <source srcset="img/screenshot-tsm-1280.png"
-                                    media="(min-width: 960px)" />
-                        
-                            <img class="screenshot-tsm"
-                                 src="img/screenshot-tsm.png"
-                                 alt="Three Star Media">
-                        </picture>
+                        <img src="img/graphics-1.png" alt="Poster">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/graphics-2.png" alt="icon and logo">
                     </div>
                     </div>
+                    <!-- carousel arrows on both side -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndicators2" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselIndicators2" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
             </div>
 
-            <div class="photos row justify-content-center" data-aos="fade-up">
+            <!-- Photos Showcase -->
+            <div class="showcase graphics row justify-content-center" data-aos="fade-up">
                 <div id="carouselIndicators3" class="carousel slide w-75 col-9">
                     <!-- carousel indicator at the bottom -->
                     <div class="carousel-indicators">
@@ -157,6 +157,9 @@
                     <!-- carousel inner contents -->
                     <div class="carousel-inner">
                     <div class="carousel-item active">
+                        <img src="img/photo-2.JPG" alt="photo">
+                    </div>
+                    <div class="carousel-item">
                         <picture class="d-block w-100">
                             <source srcset="img/photo-960.png"
                                     media="(max-width: 960px)" />
@@ -167,19 +170,6 @@
                             <img class="content-photo"
                                  src="img/photo.jpg"
                                  alt="photo">
-                        </picture>
-                    </div>
-                    <div class="carousel-item">
-                        <picture class="d-block w-100">
-                            <source srcset="img/large-icon-960.png"
-                                    media="(max-width: 960px)" />
-                        
-                            <source srcset="img/large-icon-1280.png"
-                                    media="(min-width: 960px)" />
-                        
-                            <img class="avatar-icon"
-                                 src="img/large-icon.png"
-                                 alt="avatar icon">
                         </picture>
                     </div>
                     </div>
@@ -194,9 +184,9 @@
                     </button>
                 </div>    
                 <div class="description col-3">
-                    <h3>Graphics<br>&<br>Photography</h3>
+                    <h3>Photography</h3>
                     <p>for fun,<br>but with artistic senses</p>
-                    <a href="#" class="text-decoration-underline">More Photos</a>
+                    <a href="#" class="text-decoration-underline" style="font-size:1.3rem;"><i class="fa fa-angle-double-right"></i>More</a>
                 </div>
             </div>
         </div>
