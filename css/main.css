@@ -340,19 +340,6 @@ footer img {
     align-self: center;
 }
 
-.card-img-top {
-    border: 1px solid var(--bs-purple);
-    border-radius: 0;
-    width: 90%;
-    height: 50%;
-    align-self: center;
-}
-
-.card img {
-    object-fit: cover;
-    object-position: 50% 30%;
-}
-
 .card-body h1 {
     text-shadow: 
     0 0 7px #FFF2F1,
